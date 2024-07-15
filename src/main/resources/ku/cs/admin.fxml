@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.AdminController">
+   <children>
+      <Label layoutX="187.0" layoutY="35.0" text="Member List" />
+      <Separator layoutX="423.0" layoutY="73.0" orientation="VERTICAL" prefHeight="490.0" prefWidth="0.0" />
+      <ImageView fx:id="userImage" fitHeight="104.0" fitWidth="138.0" layoutX="530.0" layoutY="89.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../images/profileDefault.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="459.0" layoutY="233.0" text="Name :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="459.0" layoutY="279.0" text="Username :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="459.0" layoutY="330.0" text="Store :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="459.0" layoutY="384.0" text="Last Login Time :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="570.0" layoutY="235.0" text="nameLabel" />
+      <Label fx:id="usernameLabel" layoutX="570.0" layoutY="281.0" text="usernameLabel" />
+      <Label fx:id="storeNameLabel" layoutX="570.0" layoutY="332.0" text="storeNameLabel" />
+      <Label fx:id="lastLoginTimeLabel" layoutX="599.0" layoutY="386.0" text="lastLoginTimeLabel" />
+      <TableView fx:id="memberTableView" layoutX="53.0" layoutY="89.0" prefHeight="419.0" prefWidth="334.0">
+         <columns>
+            <TableColumn fx:id="usernameColumn" prefWidth="163.0" text="username" />
+            <TableColumn fx:id="loginTimeColumn" prefWidth="170.0" text="login time" />
+         </columns>
+      </TableView>
+      <HBox layoutX="725.0" layoutY="26.0" onMouseClicked="#handleBackButton" prefHeight="20.0" prefWidth="34.0" style="-fx-cursor: HAND; -fx-background-radius: 15;" styleClass="over" stylesheets="@styles.css">
+         <children>
+            <ImageView fitHeight="36.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/back-button.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="711.0" layoutY="89.0" onMouseClicked="#handleCheckReport" style="-fx-cursor: HAND;">
+         <children>
+            <ImageView fitHeight="52.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/report.png" />
+               </image>
+            </ImageView>
+            <Label text="Check report" />
+         </children>
+      </VBox>
+      <Button layoutX="526.0" layoutY="508.0" mnemonicParsing="false" onAction="#handleSwitchAccessibility" text="Switch Accessibility">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="459.0" layoutY="429.0" text="Access:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="accessLabel" layoutX="570.0" layoutY="431.0" text="accessLabel" />
+      <Label layoutX="459.0" layoutY="472.0" text="Access counting while get banned:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="countingLabel" layoutX="706.0" layoutY="474.0" text="countingLabel" />
+   </children>
+</AnchorPane>

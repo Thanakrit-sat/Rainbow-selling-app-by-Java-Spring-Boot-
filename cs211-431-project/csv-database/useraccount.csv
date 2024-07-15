@@ -1,0 +1,10 @@
+admin,admin,admin,1234,images/2021-10-09_admin.jpg,none,2021-10-22T19:54:04,allow,0
+admin,DewTeerapat,teerapat,0549,images/2021-10-09_teerapat.jpeg,Dew_Store,2021-10-22T17:32:35,allow,0
+member,tester3,test03,0003,images/profileDefault.png,Test03_Store,2021-10-22T17:16:07,allow,0
+member,tester1,test01,0001,images/profileDefault.png,asd,2021-10-22T18:43:22,allow,0
+member,tester4,test04,0004,images/profileDefault.png,Test04_Store,2021-10-22T19:07:17,allow,0
+member,MYST1C,Kawaii,Kawaiidesu,images/2021-10-17_Kawaii.jpeg,MYST1C_Store,2021-10-22T13:22:02,allow,0
+member,eiei ruru,Bew,3699,images/profileDefault.png,eiei,2021-10-21T19:11:28,deny,1
+member,tester2,test02,0002,images/profileDefault.png,Test_Store02,2021-10-22T17:09:41,allow,0
+member,MADAI,maima,1111,images/profileDefault.png,none,This user hasn't logged in yet.,allow,0
+member,tester5,test05,0005,images/profileDefault.png,none,This user hasn't logged in yet.,allow,0

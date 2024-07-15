@@ -1,0 +1,31 @@
+.search-bar{
+    -fx-border-width: 1;
+    -fx-border-color: #606060;
+}
+
+.selected{
+    -fx-background-color: #bdbdbd;
+    -fx-border-width: 0 0 0 6;
+    -fx-border-color: #f30000;
+}
+
+.transparent{
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+.over:hover{
+    -fx-background-color: #bdbdbd;
+}
+
+.black-color{
+    -fx-background-color: #000;
+}
+
+.button {
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-border-color: #fff;
+}
+
+.background{
+    -fx-background-image:url('/images/UniversWallpaper.jpg');
+}

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.ProductDetailController">
+    <children>
+        <ScrollPane layoutX="159.0" layoutY="48.0" prefHeight="555.0" prefWidth="642.0">
+            <content>
+                <VBox prefHeight="833.0" prefWidth="625.0">
+                    <children>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="24.0" prefWidth="640.0">
+                     <children>
+                                  <Button mnemonicParsing="false" onAction="#handleReportButton" style="-fx-background-radius: 50; -fx-cursor: HAND; -fx-background-color: #ffd270;" text="Report">
+                                      <font>
+                                          <Font size="14.0" />
+                                      </font>
+                                  </Button>
+                     </children></HBox>
+                        <HBox alignment="CENTER" prefHeight="69.0" prefWidth="625.0">
+                            <children>
+                                <Label fx:id="productNameLabel" alignment="CENTER" contentDisplay="CENTER" text="productNameLabel">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="278.0" prefWidth="640.0">
+                            <children>
+                                <ImageView fx:id="imageLabel" fitHeight="238.0" fitWidth="253.0" pickOnBounds="true" preserveRatio="true" />
+                                <HBox />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="184.0" prefWidth="640.0">
+                            <children>
+                                <VBox alignment="TOP_RIGHT" prefHeight="163.0" prefWidth="131.0">
+                                    <children>
+                                        <Label text="Store:">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Label>
+                                        <Label text="Price:">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Label>
+                                        <Label text="Quantity:">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Label>
+                                        <Label text="Type:">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Label>
+                              <Label text="Satisfaction:">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                                    </children>
+                                </VBox>
+                                <VBox prefHeight="163.0" prefWidth="10.0" />
+                                <VBox prefHeight="163.0" prefWidth="145.0">
+                                    <children>
+                                        <Label fx:id="storeNameLabel" onMouseClicked="#handleGoToStoreByStoreName" onMouseEntered="#onMouse1" onMouseExited="#exitMouse1" style="-fx-cursor: HAND;" text="storeName" underline="true">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="priceLabel" text="priceLabel">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="quantityLabel" text="quantityLabel">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="typeLabel" onMouseClicked="#handleGoToStoreByType" onMouseEntered="#onMouse2" onMouseExited="#exitMouse2" style="-fx-cursor: HAND;" text="typeLabel" underline="true">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Label>
+                              <Label fx:id="scoreLabel" text="scoreLabel">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <HBox>
+                                 <children>
+                                    <Label fx:id="amountReviewLabel" text="amountReview" />
+                                    <Label text=" reviewers" />
+                                 </children>
+                              </HBox>
+                                    </children>
+                                </VBox>
+                                <VBox prefHeight="121.0" prefWidth="351.0">
+                                    <children>
+                                        <HBox alignment="CENTER" prefHeight="24.0" prefWidth="351.0">
+                                            <children>
+                                                <Label text="Enter your amout">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="325.0">
+                                            <children>
+                                                <TextField fx:id="amountTextField" alignment="CENTER" promptText="Enter your amount" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="29.0" prefWidth="325.0">
+                                            <children>
+                                                <Button fx:id="buyButton" mnemonicParsing="false" onAction="#handleBuyButton" prefHeight="27.0" prefWidth="152.0" style="-fx-background-radius: 200;" text="Buy">
+                                                    <font>
+                                                        <Font size="13.0" />
+                                                    </font>
+                                                </Button>
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="351.0">
+                                            <children>
+                                                <Label fx:id="orderLabel" text="orderLabel">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                  <HBox prefHeight="157.0" prefWidth="625.0">
+                     <children>
+                        <VBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="131.0">
+                           <children>
+                              <Label text="comment">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="100.0" prefWidth="13.0" />
+                        <VBox alignment="TOP_RIGHT" prefHeight="139.0" prefWidth="385.0" spacing="10.0">
+                           <children>
+                              <HBox prefHeight="0.0" prefWidth="385.0" />
+                              <MenuButton fx:id="satisfactionMenu" mnemonicParsing="false" text="satisfaction">
+                                <items>
+                                  <MenuItem mnemonicParsing="false" onAction="#point1Menu" text="1" />
+                                  <MenuItem mnemonicParsing="false" onAction="#point2Menu" text="2" />
+                                    <MenuItem mnemonicParsing="false" onAction="#point3Menu" text="3" />
+                                    <MenuItem mnemonicParsing="false" onAction="#point4Menu" text="4" />
+                                    <MenuItem mnemonicParsing="false" onAction="#point5Menu" text="5" />
+                                </items>
+                              </MenuButton>
+                              <TextArea fx:id="commentTextArea" prefHeight="63.0" prefWidth="385.0" />
+                              <Button mnemonicParsing="false" onAction="#handleCommentButton" text="comment" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <GridPane fx:id="commentGrid">
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </Pane>
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+        <VBox fx:id="menuBox" layoutY="48.0" prefHeight="555.0" prefWidth="160.0" style="-fx-background-color: fff;">
+            <children>
+                <HBox alignment="CENTER" onMouseClicked="#handleMarketMenu" prefHeight="35.0" prefWidth="196.0" spacing="2.0" styleClass="over" stylesheets="@styles.css">
+                    <children>
+                        <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/1200px-Home-icon.svg.png" />
+                            </image>
+                        </ImageView>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="58.0" text="Home">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </HBox>
+                <Separator prefWidth="200.0" />
+                <HBox alignment="CENTER" onMouseClicked="#handleStartShopMenu" prefHeight="35.0" prefWidth="147.0" spacing="5.0" styleClass="over" stylesheets="@styles.css">
+                    <children>
+                        <ImageView fitHeight="21.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/ShopIcon.png" />
+                            </image>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="26.0" prefWidth="45.0" stylesheets="@styles.css" text="Store">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <Separator prefHeight="0.0" prefWidth="147.0" />
+                <HBox alignment="CENTER" onMouseClicked="#handleSuggestionMenu" prefHeight="35.0" prefWidth="96.0" styleClass="over" stylesheets="@styles.css">
+                    <children>
+                        <ImageView fitHeight="25.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/SuggestionIcon.png" />
+                            </image>
+                        </ImageView>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="91.0" text="Suggestion" textAlignment="CENTER">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox prefHeight="380.0" prefWidth="160.0" />
+                <HBox alignment="CENTER" onMouseClicked="#handleDevInfoMenu" prefHeight="35.0" prefWidth="200.0" spacing="12.0" styleClass="over" stylesheets="@styles.css">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/DevIcon.png" />
+                            </image>
+                        </ImageView>
+                        <Label prefHeight="26.0" prefWidth="118.0" text="Developer Information">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" onMouseClicked="#handleLogOutMenu" prefHeight="35.0" prefWidth="147.0" spacing="11.0" styleClass="over" stylesheets="@styles.css">
+                    <children>
+                        <ImageView fitHeight="29.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/LogoutIcon.png" />
+                            </image>
+                        </ImageView>
+                        <Label prefHeight="19.0" prefWidth="56.0" text="Log out">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="800.0" spacing="20.0" style="-fx-background-color: fff;" stylesheets="@styles.css">
+            <children>
+                <ImageView fitHeight="40.0" fitWidth="26.0" onMouseClicked="#handleMenuButton" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/menu_icon.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </ImageView>
+                <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="25.0" prefWidth="450.0" styleClass="search-bar" stylesheets="@styles.css">
+                    <children>
+                        <TextField prefHeight="28.0" prefWidth="357.0" promptText="Search" style="-fx-background-color: f7f7f7;" stylesheets="@styles.css">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </TextField>
+                        <ImageView fitHeight="50.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/MagnifyingIcon.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Label fx:id="usernameLabel" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="34.0" layoutY="16.0" prefHeight="17.0" prefWidth="91.0" text="usernameLabel" textAlignment="RIGHT">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <ImageView fitHeight="30.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                    <image>
+                        <Image url="@../../images/user_icon.png" />
+                    </image>
+                </ImageView>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <padding>
+                <Insets left="20.0" right="20.0" />
+            </padding>
+        </HBox>
+        <Separator fx:id="menuSideSeparator" layoutX="159.0" layoutY="51.0" orientation="VERTICAL" prefHeight="555.0" />
+        <Separator fx:id="menuTopSeparator" layoutX="-1.0" layoutY="48.0" prefHeight="3.0" prefWidth="163.0" />
+    </children>
+</AnchorPane>

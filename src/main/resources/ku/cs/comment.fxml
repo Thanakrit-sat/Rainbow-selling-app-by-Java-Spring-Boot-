@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="169.0" prefWidth="183.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.CommentController">
+   <children>
+      <Label layoutX="14.0" layoutY="18.0" text="Name:" />
+      <Label fx:id="nameLabel" layoutX="53.0" layoutY="18.0" text="nameLabel" />
+      <Label layoutX="14.0" layoutY="43.0" text="Point:" />
+      <Label fx:id="pointLabel" layoutX="53.0" layoutY="43.0" text="pointLabel" />
+      <Pane layoutY="62.0" prefHeight="108.0" prefWidth="183.0">
+         <children>
+            <Text fx:id="textLabel" layoutX="15.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="153.13671875" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.RegisterController">
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;">
+            <children>
+                <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
+                    <image>
+                        <Image url="@../../images/backgroundRegis.png" />
+                    </image>
+                </ImageView>
+                <TextField fx:id="nameField" layoutX="311.0" layoutY="182.0" promptText="Full Name">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="userNameField" layoutX="312.0" layoutY="244.0" promptText="Username/email">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <Button layoutX="318.0" layoutY="434.0" mnemonicParsing="false" onAction="#handleSignUpButton" prefHeight="39.0" prefWidth="201.0" style="-fx-background-radius: 562; -fx-background-color: #f9ffbf;" text="Sign up">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Label layoutX="309.0" layoutY="549.0" text="already have an account?">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="signInLabel" layoutX="476.0" layoutY="549.0" onMouseClicked="#clickToSignIn" onMouseEntered="#onMouse" onMouseExited="#exitMouse" text="Sign in" underline="true">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Label>
+                <PasswordField fx:id="passwordField" layoutX="313.0" layoutY="307.0" promptText="Password">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </PasswordField>
+                <PasswordField fx:id="cfPasswordField" layoutX="312.0" layoutY="367.0" promptText="Confirm Password">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </PasswordField>
+                <Label fx:id="statusLabel" layoutX="311.0" layoutY="487.0" text="statusLabel" textAlignment="CENTER">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="314.0" layoutY="164.0" text="Full Name" />
+                <Label layoutX="314.0" layoutY="228.0" text="Username/email" />
+                <Label layoutX="316.0" layoutY="292.0" text="Password" />
+                <Label layoutX="314.0" layoutY="350.0" text="Confirm Password" />
+                <Label layoutX="351.0" layoutY="64.0" text="Register">
+                    <font>
+                        <Font size="40.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="122.0" fitWidth="217.0" layoutX="210.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/Regis.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

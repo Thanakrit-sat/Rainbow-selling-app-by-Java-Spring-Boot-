@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.DevInfoController">
+    <children>
+        <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2223.0" prefWidth="785.0" style="-fx-background-color: #f8d9ff;">
+                    <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="284.0" layoutY="-26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Dev_Info.png" />
+                     </image>
+                  </ImageView>
+                        <ImageView fitHeight="485.0" fitWidth="790.0" layoutX="-5.0" layoutY="1669.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/Mrk.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="54.0" fitWidth="96.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#handleBackButton" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/back-button.png" />
+                            </image>
+                        </ImageView>
+                  <ImageView fitHeight="460.0" fitWidth="800.0" layoutX="-17.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Kwaii.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="463.0" fitWidth="800.0" layoutX="-16.0" layoutY="619.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Dew.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="443.0" fitWidth="788.0" layoutX="-4.0" layoutY="1148.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Bew.png" />
+                     </image>
+                  </ImageView>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.SuggestionController">
+   <children>
+      <ScrollPane prefHeight="600.0" prefWidth="800.0">
+         <content>
+            <AnchorPane prefHeight="898.0" prefWidth="785.0" style="-fx-background-color: ECD4FF;">
+               <children>
+                  <ImageView fitHeight="46.0" fitWidth="66.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#handleBackButton" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/back-button.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="227.0" layoutY="25.0" text="คำแนะนำการใช้งานเบื้องต้น" underline="true">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="17.0" layoutY="86.0" prefHeight="778.0" prefWidth="697.0" style="-fx-border-color: black; -fx-border-radius: 50;">
+                     <children>
+                        <Label layoutX="32.0" layoutY="31.0" text="ปุ่ม Home">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="32.0" layoutY="96.0" text="ปุ่ม Store">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="50.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="เป็นหน้าที่ใช้แสดงร้านค้าของผู้ใช้ (ถ้ามี) หากไม่มีระบบจะทำการสร้างร้านค้า โดยผู้ใช้จะต้องใส่ชื่อร้านค้าที่ต้องการจะสร้าง" wrappingWidth="655.419921875">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="32.0" layoutY="189.0" text="ปุ่ม Add Product">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="50.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="เป็นหน้าที่ผู้ใช้สามารถเพิ่มสินค้าของตัวเองในร้านค้าได้ โดยจะต้องใส่ข้อมูลให้ครบถ้วน" wrappingWidth="649.328125">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="50.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="เป็นหน้าที่ใช้แสดงสินค้าทั้งหมดในระบบ">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="208.0" layoutY="189.0" text="( Only for store )" textFill="#eb0a0a">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="32.0" layoutY="262.0" text="ปุ่ม Edit Product">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="208.0" layoutY="262.0" text="( Only for store )" textFill="#eb0a0a">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="50.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="เป็นหน้าที่ผู้ใช้สามารถปรับเปลี่ยนข้อมูลสินค้าของตน โดย สามารถเปลียน ชื่อ ราคา จำนวน และ จำนวนสินค้าที่จะแสดงว่าเหลือน้อย" wrappingWidth="659.328125">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="32.0" layoutY="364.0" text="ปุ่ม Check Order">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="208.0" layoutY="364.0" text="( Only for store )" textFill="#eb0a0a">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="50.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="เป็นหน้าที่ผู้ใช้สามารถตรวจสอบข้อมูลสินค้าของตนว่า สินค้านั้นถูกซื้อโดยใคร เมื่อไหร่ สินค้าอะไรที่ถูกซื้อไป จำนวนเท่าไหร่ ราคาเท่าไหร่ สถานะของสินค้า และ หมายเลขการสั่งซื้อ" wrappingWidth="681.328125">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="32.0" layoutY="569.0" text="ปุ่ม Developer Info">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="50.0" layoutY="636.0" strokeType="OUTSIDE" strokeWidth="0.0" text="เป็นหน้าที่แสดงรายละเอียดของผู้จัดทำโปรแกรมร้านค้าขึ้น" wrappingWidth="708.328125">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="32.0" layoutY="649.0" text="ปุ่ม Log out">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="50.0" layoutY="707.41796875" strokeType="OUTSIDE" strokeWidth="0.0" text="ผู้ใช้สามารถใช้ปุ่มนี้เมื่อต้องการที่จะออกจากระบบ" wrappingWidth="708.328125">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="32.0" layoutY="463.0" text="ปุ่ม Profile ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="141.0" layoutY="463.0" text="( รูปคนด้านบนขวา )" textFill="#eb0a0a">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="50.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" text="เป็นหน้าที่แสดงรายละเอียดของผู้ใช้งาน สามารถตั้งค่าต่าง ๆ ได้ เช่น เปลี่ยนรูปโปรไฟล์ เปลี่ยนพาสเวิด" wrappingWidth="708.328125">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="300.0" layoutY="131.0" text="(ถ้ามี)" textFill="RED">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Separator layoutX="208.0" layoutY="73.0" prefHeight="3.0" prefWidth="406.0" style="-fx-background-color: black;" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMousePressed="#click" prefHeight="169.0" prefWidth="183.0" styleClass="over" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.ProductController">
+   <children>
+      <HBox alignment="CENTER" layoutX="-4.0" layoutY="-3.0" prefHeight="167.0" prefWidth="235.0">
+         <children>
+            <ImageView fx:id="imageLabel" fitHeight="157.0" fitWidth="236.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/Pizza.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Pane layoutX="-1.0" layoutY="158.0" prefHeight="97.0" prefWidth="234.0">
+         <children>
+            <HBox alignment="CENTER" layoutY="10.0" prefHeight="26.0" prefWidth="235.0">
+               <children>
+                  <Label fx:id="nameLabel" contentDisplay="CENTER" text="NameLabel">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="6.0" layoutY="47.0" prefHeight="51.0" prefWidth="102.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Price.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="priceLabel" text="PriceLabel">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="155.0" layoutY="49.0" prefHeight="51.0" prefWidth="109.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Stock.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="stockLabel" text="StockLabel">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
